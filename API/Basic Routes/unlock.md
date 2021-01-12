@@ -17,7 +17,7 @@ Provide UUID of the locker to be unlocked.
 
 ```json
 {
-    "locker_id": "[unicode 64 chars max]"
+    "locker_id": "[unicode 32 char uuid]"
 }
 ```
 
@@ -39,9 +39,9 @@ Provide UUID of the locker to be unlocked.
 
 ```json
 {
-    "id": 123,
-    "name": "Build something project dot com",
-    "url": "http://testserver/api/accounts/123/"
+    "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
+    "locker_status": 1,
+    "command": "ACCEPTED"
 }
 ```
 
