@@ -2,6 +2,7 @@
 
 Send a lock request for a specific locker.
 You are only allowed to lock a locker this way if you own it and it is set to the proper mode.
+
 **NOTE: We do not advise you to use this route outside of testing purposes. The locker will automatically be set in a lock state when the door is closed and the lock is secure.**
 
 **URL** : `/api/v1/lock`
