@@ -3,7 +3,7 @@
 Send an unlock request for a specific locker.
 You are only allowed to unlock a locker this way if you own it and it is set to the proper mode.
 
-**URL** : `/api/v1/create_locker`
+**URL** : `/api/v1/unlock`
 
 **Method** : `POST`
 
