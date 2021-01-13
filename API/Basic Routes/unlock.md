@@ -41,7 +41,8 @@ Provide UUID of the locker to be unlocked.
 {
     "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
     "locker_status": 1,
-    "command": "ACCEPTED"
+    "message": "Successfully unlocked locker.",
+    "command": "COMPLETE"
 }
 ```
 
@@ -55,6 +56,8 @@ Provide UUID of the locker to be unlocked.
 
 ```json
 {
+    "message": "Malformed JSON or missing values.",
+    "command": "REJECTED"
 }
 ```
 
@@ -67,7 +70,11 @@ Provide UUID of the locker to be unlocked.
 **Content example**
 
 ```json
-{
+{    
+    "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
+    "locker_status": 0,
+    "message": "You do not have permisssions to unlock this locker.",
+    "command": "REJECTED"
 }
 ```
 
@@ -81,6 +88,10 @@ Provide UUID of the locker to be unlocked.
 
 ```json
 {
+    "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
+    "locker_status": 0,
+    "message": "Locker is offline or could not be found.",
+    "command": "INCOMPLETE"
 }
 ```
 
@@ -90,9 +101,16 @@ Provide UUID of the locker to be unlocked.
 
 **Code** : `410 STATUS GONE`
 
-**Headers** : `{}`
+**Content example** :
 
-**Content** : `{}`
+```json
+{
+    "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
+    "locker_status": 0,
+    "message": "Locker does not exist.",
+    "command": "REJECTED"
+}
+```
 
 ---
 
@@ -100,6 +118,11 @@ Provide UUID of the locker to be unlocked.
 
 **Code** : `500 STATUS INTERNAL SERVER ERROR`
 
-**Headers** : `{}`
+**Content example** : 
 
-**Content** : `{}`
+```json
+{
+    "message": "Error generating JSON from values.",
+    "command": "INCOMPLETE"
+}
+```
