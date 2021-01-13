@@ -73,7 +73,7 @@ Provide UUID of the locker to be unlocked.
 {    
     "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
     "locker_status": 0,
-    "message": "You do not have permisssions to unlock this locker.",
+    "message": "You do not have permission to unlock this locker.",
     "command": "REJECTED"
 }
 ```
