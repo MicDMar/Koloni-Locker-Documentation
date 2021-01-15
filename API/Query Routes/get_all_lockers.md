@@ -65,8 +65,7 @@ You are only allowed to unlock a locker this way if you own it and it is set to 
       "Mode": 0,
       "Latitude": 45.5,
       "Longitude": 51.1
-    },
-    ...
+    }
   ]
 }
 ```
