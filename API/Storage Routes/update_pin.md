@@ -75,7 +75,7 @@ Provide UUID of the locker to be unlocked and the new pin to be set.
 ```json
 {    
     "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
-    "message": "You do not have permission to view this locker.",
+    "message": "You do not have permission to update this locker.",
     "command": "REJECTED"
 }
 ```
