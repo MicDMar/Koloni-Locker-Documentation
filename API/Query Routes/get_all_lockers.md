@@ -32,9 +32,9 @@ You are only allowed to unlock a locker this way if you own it and it is set to 
       "Uuid": "e505fa3b-0dcc-464a-ba95-ff61a72efe53",
       "Image": 0,
       "Item": "",
-      "Username": "",
+      "Pin": "1234",
       "State": 0,
-      "Mode": 0,
+      "Mode": 2,
       "Latitude": 45.5,
       "Longitude": 51.1
     },
@@ -46,7 +46,7 @@ You are only allowed to unlock a locker this way if you own it and it is set to 
       "Uuid": "fc301fc0-d577-40a5-b4f8-b002a6d414c6",
       "Image": 0,
       "Item": "",
-      "Username": "",
+      "Pin": "",
       "State": 0,
       "Mode": 0,
       "Latitude": 45.5,
@@ -60,9 +60,9 @@ You are only allowed to unlock a locker this way if you own it and it is set to 
       "Uuid": "a807946b-773e-498b-8e88-a6502e827e65",
       "Image": 0,
       "Item": "",
-      "Username": "",
+      "Pin": "",
       "State": 0,
-      "Mode": 0,
+      "Mode": 1,
       "Latitude": 45.5,
       "Longitude": 51.1
     }
