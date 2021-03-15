@@ -3,7 +3,7 @@
 See all stored information about a specific locker.
 You are only allowed to view a locker this way if you own it and it is set to the proper mode.
 
-**URL** : `/api/v1/get_all_lockers`
+**URL** : `/api/v1/get_locker_info`
 
 **Method** : `GET`
 
@@ -11,11 +11,19 @@ You are only allowed to view a locker this way if you own it and it is set to th
 
 **Permissions required** : None
 
-**Data constraints** : None
+**Data constraints**
+
+Provide UUID of the locker which you want to recieve information for.
+
+```json
+{
+    "locker_id": "[unicode 32 char uuid]",
+}
+```
 
 ## Success Response
 
-**Condition** : If everything is OK and and lockers were found under your owner id.
+**Condition** : If everything is OK and and the locker was found under your owner id.
 
 **Code** : `200 OK`
 
