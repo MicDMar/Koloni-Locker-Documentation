@@ -24,7 +24,7 @@ and location id for the delivery sender.
     "locker_id": "[unicode 32 char uuid]",
     "phone_number": "[unicode 11-13 int phone number with country code]",
     "message": "[unicode 128 message]",
-    "location_id": "[integer]"
+    "location_id": "[integer (process of switching over to uuids)]"
 }
 ```
 
@@ -32,7 +32,7 @@ and location id for the delivery sender.
 
 ```json
 {
-    "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",\
+    "locker_id": "58df5de0-454d-43f4-ae28-bea02e0fe1f3",
     "phone_number": "+11234567890",
     "message": "Thank you for using Koloni!",
     "location_id": "7"
