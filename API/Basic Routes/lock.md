@@ -1,4 +1,4 @@
-# Lock Locker - DEPRICATD
+# Lock Locker - DEPRICATED
 
 Send a lock request for a specific locker.
 You are only allowed to lock a locker this way if you own it and it is set to the proper mode.
